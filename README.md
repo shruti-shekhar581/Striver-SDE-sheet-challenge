@@ -1,7 +1,10 @@
 #set all matrix to zero
-public class Solution {
-    public static void setZeros(int matrix[][]) {
-        // Write your code here..
+
+
+
+
+            public static void setZeros(int matrix[][]) {
+       
         int rows=matrix.length,cols=matrix[0].length;
         int dummy1[]=new int[rows];
         int dummy2[]=new int[cols];
@@ -16,11 +19,12 @@ public class Solution {
 
             }
         }
-      for(int i=0;i<rows;i++){
+        for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
                 if(dummy1[i]==0||dummy2[j]==0)
                 matrix[i][j]=0;
             }
         } 
     }
-    }
+
+}
