@@ -1,30 +1,25 @@
-#set all matrix to zero
+#merge two sorted arrays
 
 
 
 
-            public static void setZeros(int matrix[][]) {
-       
-        int rows=matrix.length,cols=matrix[0].length;
-        int dummy1[]=new int[rows];
-        int dummy2[]=new int[cols];
-        Arrays.fill(dummy1,-1);
-        Arrays.fill(dummy2,-1);
-        for(int i=0;i<rows;i++){
-            for(int j=0;j<cols;j++){
-                if(matrix[i][j]==0){
-                    dummy1[i]=0;
-                    dummy2[j]=0;
-                }
 
-            }
-        }
-        for(int i=0;i<rows;i++){
-            for(int j=0;j<cols;j++){
-                if(dummy1[i]==0||dummy2[j]==0)
-                matrix[i][j]=0;
-            }
-        } 
+
+
+
+
+
+
+ public static int[] ninjaAndSortedArrays(int nums1[], int nums2[], int m, int n) {
+ Write your code here.
+        int pos = 0;
+for(int i=m;i<m+n;i++){
+nums1[i] = nums2[pos];
+pos++;
+}
+Arrays.sort(nums1);
+return nums1;
     }
+}
 
 
